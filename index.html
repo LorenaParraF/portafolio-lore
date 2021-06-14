@@ -5,28 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/styles2.css">
+    <title>Portafolio Lorena Parra</title>
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,800;1,100;1,200;1,700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 </head>
 
 <body>
-
     <header>
         <nav class="nav">
             <a href="">
-                <img class="nav-logo" src="/img/logo.webp" alt="">
+                <img class="nav-logo"
+                    src="https://codeless.co/folie/portfolio-product-fullscreen/wp-content/uploads/2018/09/logo.jpg"
+                    alt="">
             </a>
             <div class="d-flex">
-                <a href="" class="nav-buttom">Contacto</a>
+                <a href="" class="nav-buttom">contactar</a>
                 <div class="content-hamburger">
 
                     <div id="menu-hamburger">
@@ -40,126 +39,90 @@
 
             <div class="nav-colapse-menu">
                 <ul>
-                    <li class="nav-item"><a href="" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Sobre Mi</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Portafolio</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Habilidades</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Cotizacion</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Sigueme RSS</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">home</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">sobre mi</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">habilidades</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">cotizaciones</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">rss</a></li>
+
                 </ul>
             </div>
         </nav>
 
-        <div class="hero">
+    </header>
+
+    <div class="content" id="slide_scroll">
+        <div class="controles" id="controles">
+            <div data-direction="top" class="controles-top"></div>
+            <div data-direction="bottom" class="controles-bottom"></div>
+        </div>
+
+        <div class="hero sld active" id="animacion-0">
             <div class="hero-description">
-                <p>Soy una Programadora Full-Stack<br> Apasionada por la Tegnología </p>
+                <p>Soy una Programadora Full-Stack<br> Apacionada por la Tegnología </p>
                 <h1>Mi nombre es<strong>Lorena Parra </strong></h1>
             </div>
             <img src="./img/mouse.png" class="mouse" alt="">
         </div>
-    </header>
+        <div id="animacion-1" class="hero sld sld-1" style="background-image: url('./img/lore2.png');">
+            <div class="hero-description">
+                <p>El día sin música es nada, No logro <br>imaginar la vida sin ella.
+                </p>
+                <p>Tengo música para cada ocasión<br> no tengo favorita me gustan todos los estilos.</p>
+                <h1><i class="fa fa-play-circle"></i>
+                    <i class="fa fa-music"></i>
+                    <i class="fa fa-music"></i>
+                    <i class="fa fa-music"></i>
+                    <i class="fa fa-podcast"></i>
+                    <i class="fa fa-spotify"></i>
 
-    <div class="content">
-        <div class="sld sld-1 sld-b" style="background-image: url('./img/lore2.png');"></div>
-        <div class="sld sld-2 sld-b" style="background-image: url('./img/lore2.png');"></div>
-        <div class="sld sld-3 sld-b" style="background-image: url('./img/lore2.png');"></div>
-        <div class="sld sld-4 sld-b" style="background-image: url('./img/lore2.png');"></div>
-        <!-- <div class="sld sld-2 sld-b" style="background-image: url('./img/lore2.png');"></div>
-        <div class="sld sld-3 sld-b" style="background-image: url('./img/lore2.png');"></div>
-        <div class="sld sld-4 sld-b" style="background-image: url('./img/lore2.png');"></div> -->
+                </h1>
+            </div>
+        </div>
+        <div id="animacion-2" class="hero sld sld-2" style="background-image: url('./img/lore2.png');">
+            <div class="hero-description">
+                <p>Más que habilidad es una virtud<br>Soy una persona muy perseverante</p>
+                <p>No siempre soy la mejor, pero pongo todo <br>de mi parte para que las cosas sucedan.</p>
+            </div>
+        </div>
+        <div id="animacion-3" class="hero sld sld-3" style="background-image: url('./img/lore2.png');">
+            <div class="hero-description">
+                <p>Cotizaciones próximamente</p>
+                <h1>Estudiando programación en <strong>Academlo</strong></h1>
+                <h1><i class="fa fa-github"></i>
+                    <i class="fa fa-html5"></i>
+                    <i class="fa fa-codepen"></i>
+                    <i class="fa fa-wordpress"></i>
+                    <i class="fa fa-connectdevelop"></i>
+                    <i class="fa fa-css3"></i>
+                    <i class="fa fa-joomla"></i>
+                    <i class="fa fa-linux"></i>
+                    <i class="fa fa-slack"></i>
+
+                </h1>
+            </div>
+        </div>
+        <div id="animacion-4" class="hero sld sld-4" style="background-image: url('./img/lore2.png');">
+            <div class="hero-description">
+                <h1><strong>Sígueme!!</strong></h1>
+                <h1><i class="fa fa-facebook"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-linkedin"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-whatsapp"></i>
+
+                </h1>
+            </div>
+        </div>
     </div>
-
-    <script>
-
-    </script>
+    <div class="">
+        <div class="dsad"></div>
+    </div>
 </body>
 
-<script src="app.js"></script>
+<script src="./js/app.js"></script>
+<script src="./js/menu.js"></script>
+<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+<!-- <script src="js/scroll-slider.js"></script> -->
 
 </html>
-
-<style>
-    /*
-            
-    <header>
-        <div id="elemen">
-            <a class="icon" href="https://www.facebook.com/lorena.parra.flores/"></a>
-            <a href="mailto:lore198429@gmail.com"><button id="button" class="pointer">Contacteme</button></a>
-        </div>
-        <div>
-            <section class="parrafo1">
-                <span>Soy una Programadora Full-Stack<br> Apacionada por la Tegnología<br>
-                </span>
-            </section>
-            <section id="titulo1">
-                <span>Mi nombre es<strong>Lorena Parra</strong></span>
-            </section>
-        </div>
-        <div>
-            <section>
-                <nav role="navegacion">
-                    <div id="menu-hamburger">
-                        <input type="checkbox" />
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-
-                    <!-- menu -->
-                    <div class="nav-colapse-menu">
-                        <ul>
-                            <li class="nav-item"><a href="" class="nav-link">lorem</a></li>
-                            <li class="nav-item"><a href="" class="nav-link">lorem</a></li>
-                            <li class="nav-item"><a href="" class="nav-link">lorem</a></li>
-                            <li class="nav-item"><a href="" class="nav-link">lorem</a></li>
-                            <li class="nav-item"><a href="" class="nav-link">lorem</a></li>
-                            <li class="nav-item"><a href="" class="nav-link">lorem</a></li>
-                        </ul>
-                    </div>
-                    <!-- end menu -->
-
-
-                </nav>
-            </section>
-        </div>
-        <div id="mouse">
-            <li><img src="./img/mouse.png" alt="" style="background-color: transparent;" /></li>
-        </div>
-
-
-    </header>
-    <div id="container">
-
-        <ul id="slider">
-            <li id="slider1"><img src="./img/lore2.png" alt="" /></li>
-            <li id="slider2"><img src="./img/lore2.png" alt="" /></li>
-            <li id="slider3"><img src="./img/lore2.png" alt="" /></li>
-            <li id="slider4"><img src="./img/lore2.png" alt="" /></li>
-            <li id="slider5"><img src="./img/lore2.png" alt="" /></li>
-        </ul>
-        <nav id="thumbnails">
-            <ol>
-                <li>
-                    <a href="#slider1"></a>
-
-                </li>
-                <li>
-                    <a href="#slider2"></a>
-
-                </li>
-                <li>
-                    <a href="#slider3"></a>
-                </li>
-                <li>
-                    <a href="#slider4"></a>
-                </li>
-                <li>
-                    <a href="#slider5"></a>
-                </li>
-            </ol>
-        </nav>
-
-
-    </div>
-    */
-</style>
