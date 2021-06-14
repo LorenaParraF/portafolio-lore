@@ -29,7 +29,7 @@ div#elemen {
   width: 100%;
   margin: 3%;
 }
-#button {
+/* #button {
   display: inline-block;
   position: relative;
   margin-left: 560%;
@@ -49,14 +49,14 @@ div#elemen {
   cursor: pointer;
   background-color: white;
   color: black;
-}
+} */
 
-a.icon {
+/* a.icon {
   background-image: url(../img/logo.webp);
   color: blanchedalmond;
   width: 40px;
   height: 40px;
-}
+} */
 /* titulos parrafo home  */
 
 section#titulo1 {
@@ -214,7 +214,7 @@ img {
   background-size: cover;
   z-index: -999;
 }
-
+/* 
 li#slider1 {
   background-color: #00324b;
   color: #fff;
@@ -227,17 +227,17 @@ li#slider2 {
 li#slider3 {
   background-color: #f90;
   color: #00324b;
-}
+} */
 
-li#slider4 {
+/* li#slider4 {
   background-color: #00324b;
   color: #65bce8;
-}
+} */
 
-li#slider5 {
+/* li#slider5 {
   background-color: #65bce8;
   color: #00324b;
-}
+} */
 
 nav {
   display: flex;
@@ -304,12 +304,20 @@ ul#slider li:first-child {
   margin-right: 30px;
   display: block;
   height: fit-content;
-  padding: 7px 35px;
+  padding: 8px 39px;
   font-weight: 600;
   font-size: 13px;
   background-color: #7d1d1d;
   color: #fff;
   border-radius: 20px;
+  transition: all 0.1s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.nav-buttom:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
 }
 
 .nav-colapse-menu {
@@ -417,18 +425,18 @@ body.active {
 }
 
 .sld-1 {
-  background-color: #bf654e;
+  background-color: #e5318a;
 }
 
 .sld-2 {
-  background-color: #f90;
+  background-color: #4fa7b5;
 }
 
 .sld-3 {
   background-color: #00324b;
 }
 .sld-4 {
-  background-color: #65bce8;
+  background-color: #7e100f;
 }
 
 .content {
