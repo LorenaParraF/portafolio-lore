@@ -1,3 +1,18 @@
+/* // Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... } */
+
 :root {
   scroll-behavior: smooth;
 }
@@ -214,8 +229,8 @@ img {
   background-size: cover;
   z-index: -999;
 }
-/* 
-li#slider1 {
+
+/* li#slider1 {
   background-color: #00324b;
   color: #fff;
 }
@@ -392,10 +407,32 @@ body.active {
     background-color: rgba(0, 14, 41, 0.863);
     z-index: -1;
   } */
+@media (max-width: 1200) {
+  .hero-description {
+    flex-direction: column;
+    width: 200%;
+  }
+
+  .hero-description p {
+    font-size: 15px;
+    font-weight: 100;
+  }
+  .hero-description h1 {
+    font-size: 15px;
+    font-weight: lighter;
+  }
+
+  strong {
+    position: relative;
+    margin: 10px;
+    font-size: 10px;
+  }
+}
+/* fin media responsive */
 
 .hero-description {
+  /* display: flex; */
   width: 60%;
-  /* padding: 50px; */
   color: #fff;
 }
 
@@ -405,7 +442,6 @@ body.active {
 }
 .hero-description h1 {
   font-size: 55px;
-
   font-weight: lighter;
 }
 
@@ -473,3 +509,73 @@ body.active {
 #slide_move {
   transition: all 0.8s;
 }
+
+
+@media (max-width: 992px) {
+  .nav-colapse-menu {
+    width: 40% !important;
+  }
+
+  body.active {
+    transform: translateX(-40%);
+    /* background-color: red !important; */
+  }
+ }
+@media (max-width: 768px) {
+  .nav-colapse-menu {
+    width: 50% !important;
+    /* background-color: red !important; */
+  }
+
+  body.active {
+    transform: translateX(-50%);
+    /* background-color: red !important; */
+  }
+
+  .hero {
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-description {
+    width: 70%;
+    text-align: center;
+    /* border: 2px solid red; */
+  }
+
+  .hero-description strong{
+    display: block;
+  }
+}
+
+@media (max-width: 576px) {  
+  .nav-colapse-menu {
+    width: 70% !important;
+  }
+
+  body.active {
+    transform: translateX(-70%);
+    /* background-color: red !important; */
+  }
+  
+  .sld {
+    /* background-position: left center ;  */
+  }
+  
+  .hero-description {
+    width: 90%;
+    text-align: center;
+    /* border: 2px solid red; */
+  }
+
+  .hero-description p{
+    font-size: 25px;
+  }
+  .hero-description h1 {
+    font-size: 35px;
+  }
+  .hero-description h1 strong{
+    font-size: 35px;
+  }
+}
+
